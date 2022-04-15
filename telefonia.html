@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- Aquí está la CABECERA de nuestra página -->
+        <header>
+            <img class="encabezado" src="images/Encabezado.png" alt="">
+        </header>
+
+          <!-- Aquí está el menú principal de nuestra página -->
+          <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="#">Nuestros Productos</a>
+                    <ul>
+                        <li><a href="internet.html">Internet</a></li>
+                        <li><a href="cable.html">CableTV</a></li>
+                        <li><a href="telefonia.html">Telefonia</a></li>
+                    </ul>
+                </li>
+                <li><a href="contratar.html">Contrata YA</a></li>
+
+                <form>
+                    <input type="search" name="q" placeholder="Buscar">
+                    <!-- <input type="submit" value="¡Vamos!"> -->
+                </form>
+            </ul>    
+        </nav>
+        <div class="clr"></div>
+
+         <!-- Aquí está el contenido principal de nuestra página -->
+        <main>
+            <!-- Contiene un artículo -->
+            <div id="slider">
+                <img  src="images/telefonia.jpg" alt="">
+            </div>
+
+            <article>
+                <h2>Conecta tu Hogar o Empresa con nuestros servicios</h2>
+        
+                <p>Si te encanta todo el mundo tecnológico  te encuentras en el lugar perfecto ya que ofrecemos los servicios de Internet Residencial, Cable 100% Digital y servicios de Telefonia Movil.</p>
+                    
+                <div class="paquetes">
+                    <h3>Plan Todo incluido</h3>
+            
+                    <p>Pásate con nosotros y recibe muchos beneficios como navegación 4.5G LTE, tienes más velocidad y más cobertura.</p>
+
+                    <button onclick="window.location.href='contratar.html'" class="boton" role="button">Contrata YA!</button>
+                </div>
+
+                <div class="paquetes">
+                    <h3>Paquete sin vigencia</h3>
+            
+                    <p>Pásate con nosotros y recibe muchos beneficios como navegación 4.5G LTE, tienes más velocidad y más cobertura.</p>
+            
+                    <button onclick="window.location.href='contratar.html'" class="boton" role="button">Contrata YA!</button>
+                </div>
+                <div class="paquetes">
+                    <h3>Super Pack Express</h3>
+            
+                    <p>Pásate con nosotros y recibe muchos beneficios como navegación 4.5G LTE, tienes más velocidad y más cobertura.</p>
+
+                    <button onclick="window.location.href='contratar.html'" class="boton" role="button">Contrata YA!</button>
+                </div>
+            </article>
+    
+            <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+            <aside>
+                <h2>Promociones</h2>
+                <img  src="images/aside-img.png" alt="" />
+            </aside>
+
+            <div class="clr"></div>
+        </main>
+
+        <div class="clr"></div>
+
+        <footer>
+            <p>Flashpoint ©Copyright 2022. Todos los derechos revertidos.</p>
+        </footer>
+        
+    </div>
+</body>
+</html>

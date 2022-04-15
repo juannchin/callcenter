@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <header>
+            <img class="encabezado" src="images/Encabezado.png" alt="">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="#">Nuestros Productos</a>
+                    <ul>
+                        <li><a href="internet.html">Internet</a></li>
+                        <li><a href="cable.html">CableTV</a></li>
+                        <li><a href="telefonia.html">Telefonia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contrata YA</a></li>
+
+                <form>
+                    <input type="search" name="q" placeholder="Buscar">
+                    <!-- <input type="submit" value="¡Vamos!"> -->
+                </form>
+
+            </ul>
+
+
+        </nav>
+        <div class="clr"></div>
+        <!-- Aquí está el contenido principal de nuestra página -->
+        <main>
+            <!-- Contiene un artículo -->
+            <div id="slider">
+                <img src="images/contratar.png" alt="">
+            </div>
+
+
+            <article>
+                <div class="form-contratar">
+                    <h1>Formulario de registro</h1>
+                </div>
+                <div class="main">
+
+                    <form class="main-contratar" name="formularioContacto" method="post" action="procesarContacto.php">
+                        <div class="#datos">
+                            <h2 class="datos">Nombre:</h2>
+                            <input class="datos datos-0" type="text" name="nombre">
+                            <h2 class="datos datos1">Apellido:</h2>
+                            <input class="datos datos1-1" type="text" name="apellido">
+                            <h2 class="datos datos2">Email:</h2>
+                            <input class="datos2-2" type="email" name="email">
+                            <h2 class="datos datos3">Telefono:</h2>
+                            <input class="datos datos3-3" type="tel" name="telefono">
+                            <h2 class="datos datos4">Paquete de Internet a Contratar:</h2>
+                            <select class="datos4-4" name="paquetesInternet">
+                        <option>         </option>
+                        <option value="Paquete 1">Paquete 1</option>
+                        <option value="Paquete 2">Paquete 2</option>
+                        <option value="Paquete 3">Paquete 3</option>
+                    </select>
+                            <h2 class="datos datos5">Paquete de Cable a Contratar:</h2>
+                            <select class="datos5-5" name="paquetesCable">
+                        <option>         </option>
+                        <option>Paquete 1</option>
+                        <option>Paquete 2</option>
+                        <option>Paquete 3</option>
+                 </select>
+                            <h2 class="datos datos6">Paquete de Telefonia a Contratar:</h2>
+                            <select class="datos6-6" name="paquetesTelefonia">
+                        <option>         </option>
+                        <option>Paquete 1</option>
+                        <option>Paquete 2</option>
+                        <option>Paquete 3</option>
+                 </select>
+                            <div>
+                                <h2 class="datos datos7">Comentario:</h2>
+                                <textarea class="datos7-7" type="text" name="comentarios"></textarea>
+                            </div>
+                            <input type="radio" name="radios" class="datos datos8-8" value="0" checked="">
+                            <h2 class="datos datos8">Acepto los Terminos y Condiciones</h2>
+
+                            <button class="datos datos9" type="submit" value="enviar">Enviar</button>
+                    </form>
+                    </div>
+            </article>
+
+            <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+            <aside>
+                <h2>Promociones</h2>
+                <img src="images/aside-img.png" alt="" />
+            </aside>
+
+            <div class="clr"></div>
+
+        </main>
+        <div class="clr"></div>
+        <footer>
+            <p>Flashpoint ©Copyright 2022. Todos los derechos revertidos.</p>
+        </footer>
+
+        </div>
+</body>
+
+</html>

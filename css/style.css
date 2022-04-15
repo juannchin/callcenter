@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+div.clr {
+    clear: left;
+}
+
+
+/* Responsive */
+
+@media (min-width: 1070px) {
+    head div header nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    aside {
+        padding: 20px 30px 20px 30px;
+        width: 30%;
+        float: right;
+    }
+    article {
+        padding: 20px 0px 20px 20px;
+        width: 59%;
+        float: left;
+    }
+    .paquetes {
+        width: 31%;
+        float: left;
+        height: 100%;
+        margin-right: 10px;
+    }
+    #main {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        border-style: outset;
+        padding: 40px 100px;
+        overflow: visible;
+        background-image: linear-gradient(200deg, #ffffff 30%, aliceblue 100%);
+        box-shadow: 0 0 30px 0 rgba(31, 13, 73, 0.623);
+        border-radius: 150px;
+        border-top: 1550px;
+    }
+}
+
+@media (max-width: 1070px) {
+    img {
+        max-width: 100%;
+    }
+    nav {
+        max-width: 100%;
+    }
+    aside {
+        max-width: 100%;
+        clear: left;
+    }
+    article {
+        max-width: 100%;
+        clear: left;
+        float: none;
+    }
+    #main {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        border-style: outset;
+        padding: 20px 50px;
+        overflow: visible;
+        background-image: linear-gradient(200deg, #ffffff 30%, aliceblue 100%);
+        box-shadow: 0 0 30px 0 rgba(31, 13, 73, 0.623);
+        border-radius: 150px;
+        border-top: 1550px;
+    }
+    header img {
+        padding: 20px 20px 20px 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    header img {
+        padding: 0px 0px;
+        margin-bottom: 30px;
+    }
+   
+}
+
+body {
+    background-color: #e5e5f7;
+    /*opacity: 0.8;*/
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #f79245 0, #f79245 1px, #e5e5f7 0, #e5e5f7 50%);
+    font-family: 'Lucida Sans Regular', sans-serif;
+}
+
+
+
+.boton {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: bottom;
+    width: auto;
+}
+
+.boton:hover,
+.boton:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(39, 16, 16, 0.74) 0 4px 12px;
+    background-image: linear-gradient(300deg, #f39069e1 7%, #f80404e0 90%);
+    transition: 0.7s;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    transform: translateY(-1px);
+}
+
+.boton:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, 0.719) 0 2px 4px;
+    transform: translateY(0);
+}
+
+
+/* Estilos para el contenedor principal del sitio Web*/
+
+
+
+
+/* Estilos para el Header del sitio Web*/
+
+header {}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(250deg, #f80000bb 10%, #003481 60%);
+    list-style: none;
+    box-shadow: 0 0 10px 0 rgba(40, 7, 70, 10.623);
+    border-radius: 10px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: justify;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7em;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #0f356e;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+nav ul .active {
+    background-color: #90bb91;
+}
+
+nav ul form {
+    margin: 20px 10px 0px 10px;
+    text-align: right;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li ul li {
+    position: relative;
+    float: none;
+}
+
+nav ul li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+#slider img {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(40, 7, 70, 10.623);
+    border-radius: 20px;
+}
+
+.encabezado {}
+
+
+
+
+
+.paquetes p {
+    font-size: 14px;
+    font-style: italic;
+    ;
+}
+
+
+
+aside img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.text {
+    color: red;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.Equipo {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.nosotros {
+    /*width: 130px;*/
+    height: 160px;
+    font-family: Arial;
+    font-size: 10px;
+    border-radius: 20px;
+    margin: 0px 40px 40px 20px;
+}
+
+
+/* Estilos para el FORMULARIO DE CONTRATAR YA */
+
+.form {
+    position: relative;
+    width: 300px;
+    background-color: orangered;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, Verdana;
+    height: 40px;
+    text-align: center;
+    top: 5px;
+    left: -20px;
+    border-radius: 10px;
+}
+
+.form-contratar {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7em;
+    color: #012c6b;
+    text-align: center;
+}
+
+.main-contratar {
+    width: 700px;
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+}
+
+#datos {
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+.datos {
+    position: relative;
+    color: black;
+    font-size: 14px;
+    top: -0px;
+    left: 10px;
+}
+
+.datos2 {
+    top: 5px;
+}
+
+.datos3 {
+    top: 10px;
+}
+
+.datos4 {
+    top: 17px;
+}
+
+.datos5 {
+    top: 25px;
+}
+
+.datos6 {
+    top: 35px;
+}
+
+.datos7 {
+    top: 45px;
+}
+
+.datos8 {
+    margin: 40px;
+    text-align: center;
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3em;
+}
+
+.datos9 {
+    background-color: #f06966;
+    color: white;
+    border-radius: 10px;
+    width: 18%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Bebas Neue';
+    margin: 16px;
+}
+
+.datos9:hover {
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    background-image: linear-gradient(to right, #ff8177 10%, #ff867a 20%, #ff8c7f 90%);
+    box-shadow: rgba(39, 16, 16, 0.74) 0 4px 12px;
+}
+
+.datos-0 {
+    position: relative;
+    left: 10px;
+    top: -12px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos1-1 {
+    position: relative;
+    left: 10px;
+    top: -12px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos2-2 {
+    position: relative;
+    left: 10px;
+    top: -6px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos3-3 {
+    position: relative;
+    left: 10px;
+    top: 1px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos4-4 {
+    position: relative;
+    left: 10px;
+    top: 8px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos5-5 {
+    position: relative;
+    left: 10px;
+    top: 14px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos6-6 {
+    position: relative;
+    left: 10px;
+    top: 23px;
+    width: 350px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos7-7 {
+    position: relative;
+    left: 10px;
+    top: 33px;
+    width: 350px;
+    height: 55px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.datos8-8 {
+    position: relative;
+    left: 150px;
+    top: 65px;
+    width: 30px;
+    height: 20px;
+}

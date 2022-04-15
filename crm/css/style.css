@@ -1,0 +1,324 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #e5e5f7;
+    /*opacity: 0.8;*/
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #f79245 0, #f79245 1px, #e5e5f7 0, #e5e5f7 50%);
+    font-family: 'Lucida Sans Regular', sans-serif;
+}
+
+form {
+    width: 300px;
+    border: 3px solid rgb(177, 154, 219);
+    padding: 20px;
+    background: rgb(203, 197, 255);
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+label {
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button {
+    float: right;
+    background: rgb(35, 174, 202);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+button:hover{
+    opacity: .10;
+}
+
+.error {
+   background: #f0a9a9;
+   color: #0c0101;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(134, 3, 3);
+}
+
+#login a {
+    float: right;
+    background: rgb(183, 225, 233);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+#login a:hover{
+    opacity: .7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+div.clr {
+    clear: left;
+}
+
+
+/* Responsive */
+
+@media (min-width: 1070px) {
+    head div header nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    aside {
+        padding: 20px 30px 20px 30px;
+        width: 30%;
+        float: right;
+    }
+    article {
+        padding: 20px 0px 20px 20px;
+        width: 100%;
+        float: left;
+    }
+    .paquetes {
+        width: 31%;
+        float: left;
+        height: 100%;
+        margin-right: 10px;
+    }
+    #main {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        border-style: outset;
+        padding: 20px 50px;
+        overflow: visible;
+        background-image: linear-gradient(200deg, #ffffff 30%, aliceblue 100%);
+        box-shadow: 0 0 30px 0 rgba(31, 13, 73, 0.623);
+    }
+    .login-info{
+        float: right;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .login-info span{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .login-info a{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+}
+
+/*@media (max-width: 1070px) {
+    img {
+        max-width: 100%;
+    }
+    nav {
+        max-width: 100%;
+    }
+    aside {
+        max-width: 100%;
+        clear: left;
+    }
+    article {
+        max-width: 100%;
+        clear: left;
+        float: none;
+    }
+    #main {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        border-style: outset;
+        padding: 20px 50px;
+        overflow: visible;
+        background-image: linear-gradient(200deg, #ffffff 30%, aliceblue 100%);
+        box-shadow: 0 0 30px 0 rgba(31, 13, 73, 0.623);
+    }
+    .login-info{
+        float: right;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .login-info span{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .login-info a{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+
+} */
+
+@media (max-width: 1070px) {
+    header img {
+        padding: 0px 0px;
+        margin-bottom: 30px;
+        float: none;
+    }
+    nav {
+        max-width: 100%;
+    }
+    .login-info{
+        float: none;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .login-info span{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .login-info a{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    #main {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        border-style: outset;
+        padding: 20px 50px;
+        overflow: visible;
+        background-image: linear-gradient(200deg, #ffffff 30%, aliceblue 100%);
+        box-shadow: 0 0 30px 0 rgba(31, 13, 73, 0.623);
+    }
+   
+}
+
+/* Estilos para el contenedor principal del sitio Web*/
+
+
+/* Estilos para el Header del sitio Web*/
+
+header {}
+
+
+.encabezado {}
+
+.paquetes p {
+    font-size: 14px;
+    font-style: italic;
+    ;
+}
+
+
+
+aside img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.Equipo {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.nosotros {
+    /*width: 130px;*/
+    height: 160px;
+    font-family: Arial;
+    font-size: 10px;
+    border-radius: 20px;
+    margin: 0px 40px 40px 20px;
+}
+
+
+
+#datos {
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(250deg, #f80000bb 10%, #003481 60%);
+    list-style: none;
+    box-shadow: 0 0 10px 0 rgba(40, 7, 70, 10.623);
+    border-radius: 10px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: justify;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7em;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #0f356e;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+nav ul .active {
+    background-color: #90bb91;
+}
+
+nav ul form {
+    margin: 20px 10px 0px 10px;
+    text-align: right;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li ul li {
+    position: relative;
+    float: none;
+}
+
+nav ul li ul li ul {
+    right: -140px;
+    top: 0px;
+}
