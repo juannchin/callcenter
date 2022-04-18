@@ -3,7 +3,7 @@
 ?>
     <?php include('includes/header.php'); 
     
-    $ses_sql = mysqli_query($conn,"SELECT * FROM clientes WHERE cuenta NOT NULL");
+    $ses_sql = mysqli_query($conn,"SELECT * FROM clientes WHERE cuenta IS NOT NULL");
     
     ?>
         <!-- Aquí está el contenido principal de nuestra página -->
@@ -22,7 +22,7 @@
             <th>Telefono</th>
             <th>Email</th>
             <th>Editar</th>
-            <th>Borrar</th>
+            <th>Desactivar</th>
             </tr>";
 
             while($row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC))
@@ -32,8 +32,8 @@
             echo "<td>" . $row['apellido'] . "</td>";
             echo "<td>" . $row['telefono'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
-            echo "<td><a href='edit.php?id=".$row['id']."'><img src='./images/icons8-Edit-32.png' alt='Edit'></a></td>";
-            echo "<td><a href='delete.php?id=".$row['id']."'><img src='./images/icons8-Trash-32.png' alt='Delete'></a></td>";
+            echo "<td><a href='edit.php?id=".$row['id']."&tipo=cliente'><img src='imagenes/Editing-Edit-icon.png' width='25' alt='Editar'></a></td>";
+            echo "<td><a href='delete.php?id=".$row['id']."'><img src='imagenes/desactivar.png' width='25' alt='Desactivar'></a></td>";
             echo "</tr>";
             }
             echo "</table>";

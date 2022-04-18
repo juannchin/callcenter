@@ -18,18 +18,21 @@
         $apellido = $_POST["apellido"]; 
         $email = $_POST["email"]; 
         $telefono = $_POST["telefono"];  
-        $paqueteInternet = $_POST["paquetesInternet"]; 
+        $paqueteCable = $_POST["paquetesCable"]; 
+        $paqueteInternet = $_POST["paquetesInternet"];
+        $paqueteTelefonia = $_POST["paquetesTelefonia"]; 
 
         // Create connection
         //$conn = mysqli_connect($servername, $username, $password, $database);
         // Check connection
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
+        } else {
+            echo "Connected successfully<br><br>";
         }
         
-        echo "Connected successfully";
-        
-        $sql = "INSERT INTO clientes (nombre, apellido, email, telefono) VALUES ('$nombre', '$apellido', '$email', '$telefono')";
+        $sql = "INSERT INTO clientes (nombre, apellido, email, telefono, paquete1, paquete2, paquete3) 
+                VALUES ('$nombre', '$apellido', '$email', '$telefono', '$paqueteCable', '$paqueteInternet', '$paqueteTelefonia')";
         if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
         } else {
